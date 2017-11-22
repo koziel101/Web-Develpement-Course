@@ -1,9 +1,254 @@
 <html>
     <head>
         <title>BBC WebSite</title>
+
+        <style type="text/css">
+            #topbar{
+                width: 1100px;
+                margin: 0 auto;
+                height: 40px;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            h1{
+                margin: 0;
+                padding: 0;
+                color:white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px; 
+                float: left;
+            }
+
+            #local-news{
+                border: 1px #BB4545 solid;
+                float: right;
+                width: 200px;
+                padding: 5px 5px 0 10px;
+                margin: 5px 10px 0 0;
+            }
+
+            #local-news a{
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                position: relative;
+                top: -15px;
+            }
+
+            #local-news a:hover{
+                text-decoration: underline;
+            }
+
+            local-news img{
+                height: 40px;
+            }
+
+            #logo{
+                margin-top: 8px;
+                width: 100px;
+                float: left;
+                margin-right: 8px;
+            }
+
+            #signin-image{
+                width: 25px;
+                margin: 11px 15px;
+                float:left;
+            }
+
+            #signin-text{
+                font-weight: bold;
+                font-size: 90%;
+                position: relative;
+                top: 15px;
+            }
+
+            #wigglyline{
+                float: left;
+                height: 40px;
+                padding-left: 50px;
+            }
+
+            #bell{
+                height: 25px;
+                margin: 9px 8px 0 8px;
+            }
+
+            #bell-div{
+                float: left;
+            }
+
+            #more-arrow{
+                width: 16px;
+                margin-left: 20px;
+            }
+
+            #search-box{
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 5px;
+                margin: 5px 0 5px 5px;
+                float: left;
+            }
+
+            #magnifying-glass{
+                height: 26px;
+                margin-top: 5px;
+            }
+
+            #menu-bar-container{
+                background-color: #BB1919;
+                width: 100%;
+                height: 80px;
+            }
+
+            #menu-bar{
+                width: 1100px;
+                margin: 0 auto;
+            }
+
+            #menu-bar-2-container{
+                background-color: A91717;
+                width: 100%;
+            }
+
+            #menu-bar-2{
+                width: 1100px;
+                margin: 0 auto;
+                height: 40px;
+            }
+
+            #menu-bar-2 a{
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                border-right: 1px solid #BB4545;
+                font-size: 17px;
+                position: relative;
+                top: 10px;
+            }
+
+            #menu-bar-2 a:hover{
+                text-decoration: underline;
+            }
+            
+            #down-arrow{
+                height: 15px;
+                position: relative;
+                top: 10px;
+            }
+
+            .topbar-section{
+                float: left;
+                border-left: 1px #cccccc solid;
+                height: 100%;
+            }
+
+            .topbar-menu{
+                font-weight: bold;
+                font-size: 90%;
+                padding: 13px 15px 0 15px;
+                height: 27px;
+            }
+
+            .clear{
+                clear: both;
+            }
+            
+            .no-border{
+                border: none !important;
+            }
+        </style>
+
     </head>
 
     <body>
+        <div id="topbar">
+            <img id="logo" src="imagens/bbc-logo.png">
+
+            <div id="signin-div" class="topbar-section">
+                <img id="signin-image" src="imagens/signinimage.png">
+                <span id="signin-text">Sign-in</span>                
+            </div>
+
+            <div id="bell-div">
+                <img id="wigglyline" src="imagens/wigglyline.png"> 
+                <img id="bell" src="imagens/bell.png">
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>News</span>
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>Sport</span>
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>Weather</span>
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>iPlayer</span>
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>TV</span>
+            </div>
+
+            <div class="topbar-section topbar-menu">
+                <span>More</span>
+                <img id="more-arrow" src="imagens/more-arrow.png">
+            </div>
+
+            <div class="topbar-section">
+                <input id="search-box" type="text" value="Search">
+                <input type="image" id="magnifying-glass" src="imagens/magnifying-glass.png">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="menu-bar-container">
+
+            <div id="menu-bar">
+                <h1>NEWS</h1>
+
+                <div id="local-news">
+                    <a href="">Find local news</a>
+                    <img src="imagens/pointer.png">
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="menu-bar-2-container">
+                <div id="menu-bar-2" >
+                    <a href="">Home</a>
+                    <a href="">UK</a>
+                    <a href="">World</a>
+                    <a href="">Bussines</a>
+                    <a href="">Politics</a>
+                    <a href="">Tech</a>
+                    <a href="">Science</a>
+                    <a href="">Health</a>
+                    <a href="">Education</a>
+                    <a href="">Entertainment & Arts</a>
+                    <a href="">Video & Audio</a>
+                    <a href="" class="no-border">More</a>
+                    <img id="down-arrow" src="imagens/down-arrow.png">
+                </div>
+            </div>
+
+        </div>
 
     </body>
 </html>
