@@ -25,6 +25,24 @@
                 float: left;
             }
 
+            h2{
+                font-weight: normal;
+                font-size: 20px;
+                margin-top: 40px;
+                border-bottom: 2px solid #BB4545;
+                width: 100px;
+            }
+
+            h3 a{
+                color:black;
+                font-size: 30px;
+                text-decoration: none;
+            }
+
+            h3 a:hover{
+                color: #1167a8;
+            }
+
             #local-news{
                 border: 1px #BB4545 solid;
                 float: right;
@@ -45,7 +63,7 @@
                 text-decoration: underline;
             }
 
-            local-news img{
+            #local-news img{
                 height: 40px;
             }
 
@@ -139,11 +157,57 @@
             #menu-bar-2 a:hover{
                 text-decoration: underline;
             }
-            
+
             #down-arrow{
                 height: 15px;
                 position: relative;
                 top: 10px;
+            }
+
+            #page-container{
+                width: 1000px;
+                margin: 0 auto;
+            }
+
+            #article-summary{
+                color: #5a5a5a;
+                width: 260px;
+                float: left;
+            }
+
+            #article-summary img{
+                height: 15px;
+                position: relative;
+                top: 2px;
+            }
+
+            #article-summary a{
+                text-decoration: none;
+                color: #a91717;
+                border-left: 1px solid #cccccc;
+                padding-left: 7px;
+            }
+
+            #article-summary a:hover{
+                text-decoration: underline;
+                color: #1167a8;
+            }
+
+            #article-container{
+                float: left;
+                width: 650px;
+                border-right: 1px solid #cccccc;
+            }
+
+            #main-article-image{
+                width: 350px;
+                margin-left: 20px;
+            }
+
+            #article-hr{
+                border-top: 1px solid #a91717;
+                width: 50px;
+
             }
 
             .topbar-section{
@@ -162,9 +226,18 @@
             .clear{
                 clear: both;
             }
-            
+
             .no-border{
                 border: none !important;
+            }
+
+            .article-link{
+                color: black !important;
+                border-left: none !important;
+                margin-left: none !important;
+                padding-left: none !important;
+
+                text-decoration: none;
             }
         </style>
 
@@ -247,8 +320,33 @@
                     <img id="down-arrow" src="imagens/down-arrow.png">
                 </div>
             </div>
-
         </div>
 
+        <div class="clear"></div>
+
+        <div id="page-container">
+            <div id="main-article">
+
+                <h2>Technology</h2>
+
+                <div id="article-container">
+
+
+                    <h3><a href="">Asda  bug exposed payment details</a></h3>
+                    <div id="article-summary">
+                        <p>Security vulnerabilities that put customers at risk have 
+                            affected Asda's website for a couple of years, a security expert has revealed.</p>
+                        <p><img src="imagens/clock.png"> 22 November 2017 <a href="">Technology</a></p>
+
+                        <hr align="left" id="article-hr">
+
+                        <p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
+                        <p><a class="article-link" href="">Ebay flaw has existed for months</a></p>
+
+                    </div>
+                    <img id="main-article-image" src="imagens/main-article-image.png">
+                </div>
+            </div>
+        </div>
     </body>
 </html>
