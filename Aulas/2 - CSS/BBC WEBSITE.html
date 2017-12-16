@@ -175,7 +175,7 @@
                 float: left;
             }
 
-            #article-summary img{
+            .clock{
                 height: 15px;
                 position: relative;
                 top: 2px;
@@ -207,7 +207,17 @@
             #article-hr{
                 border-top: 1px solid #a91717;
                 width: 50px;
+            }
 
+            #watch-listen{
+                position: relative;
+                left: 20px;
+                font-size: 25px;
+            }
+
+            h4{
+                font-size: 20px;
+                font-weight: normal;
             }
 
             .topbar-section{
@@ -238,6 +248,31 @@
                 padding-left: none !important;
 
                 text-decoration: none;
+            }
+
+            .article-side-image{
+                float: left;
+                width: 120px;
+                margin-right: 10px;
+            }
+
+            .watch-listen-link{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .watch-listen-link:hover{
+                color: #1167a8;
+            }
+
+            .date{
+                padding-right: 10px;
+            }
+            
+            .clock{
+                
             }
         </style>
 
@@ -336,7 +371,7 @@
                     <div id="article-summary">
                         <p>Security vulnerabilities that put customers at risk have 
                             affected Asda's website for a couple of years, a security expert has revealed.</p>
-                        <p><img src="imagens/clock.png"> 22 November 2017 <a href="">Technology</a></p>
+                        <p><img class="clock" src="imagens/clock.png">  <span class="date">22 November 2017 </span><a href="">Technology</a></p>
 
                         <hr align="left" id="article-hr">
 
@@ -346,6 +381,13 @@
                     </div>
                     <img id="main-article-image" src="imagens/main-article-image.png">
                 </div>
+            </div>
+
+            <div id="watch-listen">
+                <h4>Watch/Listen</h4>
+                <img class="article-side-image" src="imagens/article1.png">
+                <p><a class="watch-listen-link" href="">UK science chief backs blockchains</a></p>
+                <p><img class="clock" src="imagens/clock.png"> <span class="date">22 November 2017 </span><a href="">Technology</a></p>
             </div>
         </div>
     </body>
