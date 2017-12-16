@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+
+        <p id="text">Hello World</p>
+        <button id="btn">Change text</button>
+
+        <p id="text2">Javascript is ...</p>
+        <button id="btn2">Second Button</button>
+
+        <p id="text3"></p>
+        <button id="btn3">Third Button</button>
+
+        <p id="styleMe">Text to be styled</p>
+        <button id="styleBtn">Style Text</button>
+
+        <script type="text/javascript">
+            document.getElementById("btn").onclick = function () {
+                document.getElementById("text").innerHTML = "mudado"
+            }
+
+            document.getElementById("btn2").onclick = function () {
+                document.getElementById("text2").innerHTML = document.getElementById("text2").innerHTML + "awesome!"
+            }
+
+            document.getElementById("btn3").onclick = function () {
+                document.getElementById("text3").innerHTML = "<h1>Beer</h1>"
+            }
+
+            document.getElementById("styleBtn").onclick = function () {
+                document.getElementById("styleMe").style.color = "red"
+                document.getElementById("styleMe").style.fontSize = "50px"
+                document.getElementById("styleMe").style.display = "none"
+            }
+        </script>
+    </body>
+</html>
