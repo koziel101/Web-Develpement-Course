@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+	<body>
+
+		<p>The password is "Pizza and Bacon"</p>
+
+		<input type="text" id="text">
+
+		<button id="btn">Enter</button>
+
+		<script type="text/javascript">
+			document.getElementById("btn").onclick = function(){
+				var pass = document.getElementById("text").value
+
+				if (pass == "Pizza and Bacon") {
+					alert("Password accepted")
+				}else{
+					alert("Wrong password")
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -4,9 +4,19 @@
 		<title>JavaScript</title>
 	</head>
 	<body>
+
+		<input type="text" id="txtInput">
+
+		<button id="btn">Change the Text</button>
+
+		<p id="txt">Text to be changed</p>
+
 		<script type="text/javascript">
-			var x = "rob"
-			alert(x)
+			document.getElementById("btn").onclick = function(){
+				var txtEntered = ""
+				txtEntered = document.getElementById("txtInput").value
+				document.getElementById("txt").innerHTML = txtEntered
+			}
 		</script>
 	</body>
 </html>
