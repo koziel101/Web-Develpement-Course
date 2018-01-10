@@ -1,1 +1,1 @@
-Linha 1 do conflito
+Linha 1 do conflito, Adicionando linha para o master
