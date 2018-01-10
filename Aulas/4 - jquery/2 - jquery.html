@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery</title>
+		<!-- 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		-->
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css">
+			#circle{
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				margin: 15px;
+				background-color: green;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="circle"></div>
+		
+		<script type="text/javascript">
+			/*
+			$("#circle").click(function() {
+				$("p").html("Text changed")
+			})
+			
+			$("#circle").hover(function() {
+				$("p").html("Text changed")
+				$("iframe").attr("src", "http://www.facebook.com")
+			})
+			*/
+			
+			$("#circle").click(function() {
+				$("#circle").css("background-color", "red")
+				//alert($("#circle").css("height"))
+				alert($("body").css("width"))
+			})
+			
+			/*
+			$("div").click(function(){
+				//$(this).css("display", "none")
+				
+				if($(this).attr("id") == "circle"){
+					alert("You clicked on a " + $(this).attr("id"))
+				}else{
+					alert("You clicked on a square")
+				}				
+			})
+			*/
+			
+		</script>
+	</body>
+</html>

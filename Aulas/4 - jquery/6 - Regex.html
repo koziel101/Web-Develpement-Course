@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REGEX</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			/*  Ignorando letas maiusculas:
+			var regex = /Here/i
+			var str = "Regex is herE"
+			*/
+			var regex = /e/g
+			//Todas as vezes que "e" aparece
+			var str = "Regex is here"
+			var result = str.match(regex)
+			alert(result)
+		</script>
+	</body>
+</html>

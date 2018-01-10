@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	
+	<body>
+		<p>This paragraph will become the data of the file</p>
+		<button>Discover the secret of Egypt.</button>
+		<script type="text/javascript">
+			
+			$("button").click(function(){
+				$.ajax("info.txt").done(function(data){
+					$("p").html(data);
+				}).fail(function(){
+					$("p").html("Unable to retrieve data")
+				})
+			})
+			
+		</script>
+	</body>
+</html>

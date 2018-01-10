@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery</title>
+		<!-- 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		-->
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css">
+			#circle{
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				margin: 15px;
+				float: left;
+				background-color: green;
+			}
+
+			.square{
+				height: 100px;
+				width: 100px;
+				margin: 15px;
+				float: left;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="circle"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		
+		<script type="text/javascript">
+			/* Verificando se JQuery esta instalado: 
+			if(typeof jQuery == "undefined"){
+				alert("JQuery is not installed!")
+			}else{
+				alert("Good to go!")
+			}
+			*/
+			
+			$("#circle").click(function() {
+				alert("Circle was clicled")
+			})
+			
+			$(".square").click(function() {
+				alert("Square was clicled")
+			})
+			
+			/*
+			$("div").click(function() {
+				alert("circle was clicled")
+			})
+			*/
+			
+		</script>
+	</body>
+</html>
